@@ -3,3 +3,14 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
     password: 123456
+    url: jdbc:mysql://192.168.26.78/sell?characterEncoding=utf-8&userSSL=false
+#    url: jdbc:mysql://192.168.1.105/sell?characterEncoding=utf-8&userSSL=false
+  jpa:
+    show-sql: true
+
+    properties:
+      hibernate:
+        enable_lazy_load_no_trans: true
+server:
+  servlet:
+    context-path: /sell
